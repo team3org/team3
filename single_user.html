@@ -36,38 +36,23 @@
 
     </header>
 
-    <!-- IMAGE GRID -->
-    <main class="model-profile">
-        <div class="profile-container">
-            <div class="info">
-                <h1>MIA GERDES</h1>
-                <p><strong>Alder:</strong> 24 år</p>
-                <p><strong>Køn:</strong> Kvinde</p>
-                <p><strong>Fødselsdag:</strong> 18/01/2001</p>
-                <p><strong>Højde:</strong> 155 cm</p>
-                <p><strong>Øjenfarve:</strong> Blå</p>
-                <p><strong>Hår:</strong> Lyst/Glatt</p>
-                <br>
-                <p><strong>E-mail:</strong> Miasdk@hotmail.dk</p>
-                <p><strong>Tlf:</strong> 20988943</p>
-                <br>
-                <p><strong>Personlige træk:</strong> Rolig, nærværende og ambitiøs</p>
-                <p><strong>Drømmer om:</strong> Kreativ udfoldelse</p>
-            </div>
+    <main>
+        <section class="user_container_single">
+            <article>
 
-            <div class="images-mia">
-                <img src="images/mia.webp" alt="Mia1">
-                <img src="images/mia2.webp" alt="Mia2">
-                <img src="images/mia3.webp" alt="Mia3">
-            </div>
-        </div>
-        <div class="boble-container">
-            <img src="images/tegn.png" alt="boble">
-        </div>
+                <h1>Navn: Lotte ${user.lastName}</h1>
+                <!-- firstname ${user.firstName}  -->
+                <!-- <img src="${user.image}" alt=""> -->
+                <img src="https://dummyjson.com/icon/emilys/128" alt="">
 
-        <div>
-            <hr class="custom-line">
-        </div>
+
+                <p>Navn: ${user.firstName}</p>
+                <p>${user.lastName}</p>
+                <p>${user.height}</p>
+            </article>
+        </section>
+
+
     </main>
 
     <footer>
@@ -97,6 +82,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- <script src="single_user.js"></script> -->
+
 </body>
 
 </html>

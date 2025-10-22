@@ -17,8 +17,7 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="RAW Models logo">
+            <a href="index.html"><img src="images/logo.png" alt="RAW Models logo">
             </a>
         </div>
         <nav>
@@ -37,6 +36,13 @@
     </header>
 
     <main>
+        <!-- 
+        <a href="categories.html?gender=male">Mænd</a>
+        <a href="categories.html?genser=female">Kvinder</a> -->
+
+
+
+
         <div class="main-content">
             <div class="text-section">
                 <h1>Ægte mennesker.<br>Ægte samarbejder.</h1>
@@ -47,8 +53,11 @@
                 </p>
             </div>
             <div class="images">
-                <img src="images/woman.png" alt="Model 1">
-                <img src="images/man.png" alt="Model 2">
+                <a href="categories.html?gender=female">
+                    <p>Kvinder</p><img src="images/woman.png" alt="Model 1">
+                </a>
+                <a href="categories.html?gender=male"><img src="images/man.png" alt="Model 2"></a>
+
             </div>
         </div>
 
@@ -93,6 +102,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>

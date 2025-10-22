@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+img {
+  display: block;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -68,7 +70,6 @@ nav.nav a {
   justify-content: space-around;
   align-items: center;
   padding: 40px;
-  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -110,7 +111,14 @@ nav.nav a {
   margin-bottom: 40px;
   margin-right: 40px;
 }
-
+.user_container {
+  img {
+    width: 100%;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 footer {
   display: flex;
   justify-content: space-around;
@@ -245,7 +253,11 @@ footer a:active {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
-
+@media (min-width: 800px) {
+  .user_container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 /************* Burgermenu *****************/
 
 header {
@@ -359,8 +371,7 @@ nav {
 
 main {
   max-width: 1200px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-inline: auto;
 }
 
 .hide_mobile {
