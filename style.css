@@ -27,6 +27,22 @@ h1 {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  display: inline-block;
+}
+
+a img {
+  display: block;
+  margin: 0 auto;
+}
+
+a .forside_tekst {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
