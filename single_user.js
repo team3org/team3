@@ -18,12 +18,25 @@ function getData(url) {
 getData(url); //Kalder funktionen getData
 
 function showUsers(user) {
+  console.log(user);
   //Går igennem alle users,
-  user_container.innerHTML += ` <article> 
-    <img src="${user.image}" alt="">
-    <p>${user.firstName}</p>
-    <p>${user.lastName}</p>
-    <p>${user.height}</p>
-    </article>
+  user_container.innerHTML += ` 
+     <div>
+            <h1>${user.firstName} ${user.lastName}</h1>
+            <p class="single_user_space">Alder: ${user.age}</p>
+            <p>Køn: ${user.gender}</p>
+            <p>Fødselsdag: ${user.birthDate}</p>
+        
+            <p class="single_user_space">Højde: ${user.height} cm</p>
+            <p>Hår: ${user.hair.color} ${user.hair.type}</p>
+            <p>Øjne: ${user.eyeColor}</p>
+        
+            <p class="single_user_space">Email: ${user.email}</p>
+            <p>Telefon: ${user.phone}</p>
+        </div>
+        <div>
+            <img class="single_user_img" src="${user.image}" alt="">
+        </div>
+   
 `;
 }
