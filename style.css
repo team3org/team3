@@ -269,6 +269,11 @@ footer a:active {
   border-radius: 15px;
 }
 
+.user_container {
+  width: 90%;
+  object-fit: cover;
+}
+
 @media (min-width: 800px) {
   .user_container {
     grid-template-columns: repeat(5, 1fr);
