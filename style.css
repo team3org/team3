@@ -52,8 +52,16 @@ nav.nav a {
   display: block;
 }
 
-.burger {
+.menu {
   display: none;
+}
+
+nav.active .menu {
+  display: flex;
+}
+
+.burger {
+  display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
