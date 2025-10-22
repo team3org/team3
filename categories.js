@@ -43,8 +43,7 @@ function showUsers(users) {
     //Går igennem alle produkter,
     user_container.innerHTML += ` <article> 
        <a href="single_user.html?id=${user.id}"><img src="${user.image}" alt="">
-    <p>${user.firstName}</p> 
-    <p>${user.lastName}</p></a>
+    <p>${user.firstName} ${user.lastName}</p></a>
     </article>
 `;
   });
