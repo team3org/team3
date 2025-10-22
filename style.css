@@ -274,10 +274,20 @@ footer a:active {
   object-fit: cover;
 }
 
+article {
+  width: 100%;
+}
+
+article a {
+  width: 100%;
+}
+
 @media (min-width: 800px) {
   .user_container {
     grid-template-columns: repeat(5, 1fr);
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /************* Burgermenu *****************/
